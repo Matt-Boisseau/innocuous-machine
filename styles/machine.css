@@ -1,0 +1,69 @@
+:root {
+	--row-height: 80px;
+	--row-vertical-padding: 20px;
+	--row-total-height: calc(var(--row-height) + (2 * var(--row-vertical-padding)));
+	--cabinet-label-width: 50px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 5px var(--c0) solid;
+}
+
+.cabinetLabel {
+	background: var(--c0);
+	color: var(--c1);
+	width: var(--cabinet-label-width);
+}
+
+.cabinetLabel span {
+	display: inline-block;
+	width: var(--row-total-height);
+	left: calc(-1 * var(--row-total-height));
+	height: var(--cabinet-label-width);
+	line-height: var(--cabinet-label-width);
+	position: absolute;
+	transform-origin: 100% 0;
+	transform: rotate(-90deg);
+	text-align: center;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: var(--row-vertical-padding) 0 var(--row-vertical-padding) var(--row-vertical-padding);
+	height: var(--row-height);
+	width: 100px;
+}
+
+.inputs {
+	display: flex;
+	height: 65%;
+}
+
+.inputs>* {
+	flex-grow: 1;
+	flex-basis: 100%;
+	height: 100%;
+	appearance: none;
+	font-size: 30px;
+}
+
+.inputs progress[value]::-webkit-progress-bar {
+	background: var(--c2);
+}
+
+.inputs progress[value]::-webkit-progress-value {
+	background: var(--c7);
+}
+
+.inputs button {
+	cursor: pointer;
+}
+
+.control input[type="text"] {
+	height: 20%;
+	appearance: none;
+}

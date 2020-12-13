@@ -1,0 +1,42 @@
+#hero {
+	height: 200px;
+	width: 100%;
+	background-color: var(--c7);
+}
+
+#container {
+	display: flex;
+	max-width: 900px;
+	margin: 50px auto 0;
+	font-size: 120%;
+	line-height: 140%;
+}
+
+aside {
+	flex: 0 0 200px;
+	align-self: flex-start;
+	position: sticky;
+	top: var(--sticky-top);
+	margin-right: 50px;
+	background-color: var(--c1);
+}
+
+aside nav {
+	display: flex;
+	flex-direction: column;
+}
+
+aside,
+main section {
+	padding: 20px 15px 50px;
+}
+
+main {
+	flex: 1 0;
+	padding-bottom: 50vh;
+}
+
+main section {
+	margin: 0 0 50px;
+	background-color: var(--c1);
+}

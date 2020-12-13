@@ -1,0 +1,35 @@
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--c15);
+}
+
+header span,
+header nav {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+header #headerTitle {
+	flex: 0 0 auto;
+	background-color: var(--c2);
+	color: var(--c1);
+	padding: 10px 15px;
+}
+
+@media only screen and (max-width: 700px) {
+
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	header span,
+	header nav {
+		display: inline-block;
+		padding: 5px 10px 0 0;
+	}
+}

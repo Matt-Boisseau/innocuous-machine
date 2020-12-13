@@ -1,0 +1,43 @@
+:root {
+	/* C64 colors */
+	--c0: #000; /* black */
+	--c1: #fff; /* white */
+	--c2: #800; /* red */
+	--c3: #afe; /* cyan */
+	--c4: #c4c; /* purple */
+	--c5: #0c5; /* green */
+	--c6: #00a; /* blue */
+	--c7: #ee7; /* yellow */
+	--c8: #d85; /* orange */
+	--c9: #640; /* brown */
+	--c10: #f77; /* light red */
+	--c11: #333; /* dark gray */
+	--c12: #777; /* gray */
+	--c13: #af6; /* light green */
+	--c14: #08f; /* light blue */
+	--c15: #bbb; /* light gray */
+
+	--sticky-top: 80px;
+}
+
+body {
+	margin: 0;
+	background-color: var(--c11);
+}
+
+#cover {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: var(--c15);
+	z-index: 999;
+}
+
+bad {
+	/* color: var(--c7);
+	background-color: var(--c0);
+	padding: 0 10px; */
+	font-family: monospace;
+}
